@@ -1,0 +1,35 @@
+uuid: test
+jobjava:
+  name: jobjava YML
+
+---
+spring:
+  profiles: default
+jobjava:
+  name : jobjava Default
+  list:
+    - name: my name
+      descr: my description
+    - name: another name
+      descr: another description
+---
+spring:
+  profiles: prod
+jobjava:
+  name : jobjava Prod
+  list :
+      - name: my name
+        descr: my description
+      - name: another name
+        descr: another description
+      - name: another name
+        descr: another description
+---
+spring:
+  profiles: dev
+jobjava:
+  name : jobjava Dev
+  work-for : home
+  list :
+      - name: my name
+        descr: my description
